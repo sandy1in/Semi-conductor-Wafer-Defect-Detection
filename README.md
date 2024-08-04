@@ -4,7 +4,7 @@ Project focused on using Convolutional Neural Networks (CNNs) to improve defect 
 semiconductor wafer surfaces. Traditional methods like manual inspection and feature-based 
 algorithms oŌen fall short in accuracy and reliability for such tasks.
 
-We developed a specialized CNN architecture called CNN-WDI (CNN for Wafer Defect IdenƟfication) to 
+We developed a specialized CNN architecture called CNN-WDI (CNN for Wafer Defect Identification) to 
 directly learn and extract meaningful features from raw wafer map images. This approach aimed to 
 achieve higher classificaƟon accuracy compared to convenƟonal methods.
 
