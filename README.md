@@ -6,13 +6,13 @@ Welcome to the "Wafer Defect Identification" repository! This project focuses on
 
 Link : http://mirlab.org/dataset/public/
 Raw_images
-
+![img1](https://github.com/sandy1in/Semi-conductor-Wafer-Defect-Detection/blob/main/img1.jpg)
 Our dataset includes images of wafers with defects classified into nine different classes. To enhance the dataset and mitigate the class imbalance issue, we have implemented data augmentation techniques.
 
 ## Preprocessing
 One-Hot Encoded Semantic Segmentation (OHESS) To prepare the data for training, we have utilized the One-Hot Encoded Semantic Segmentation (OHESS) technique. This involves resizing and augmenting the images, enhancing the model's ability to generalize and recognize defects effectively.
 
-
+![img2](https://github.com/sandy1in/Semi-conductor-Wafer-Defect-Detection/blob/main/img2.jpg)
 
 ## Handling Class Imbalance
 Class imbalance is a common challenge in multi-class classification problems. In our dataset, we observed a significant imbalance between classes. To address this, we have employed data augmentation strategies to increase the representation of minority classes. This ensures that the model learns effectively from all classes, improving overall performance.
@@ -20,3 +20,11 @@ Class imbalance is a common challenge in multi-class classification problems. In
 ## Requirements
 pip install -r requirements.txt
 Follow the instructions in the notebooks and scripts within each directory to explore and run the project components. Contributing
+
+## GUI 
+command to run the gui model file
+streamlit model.py 
+
+![gui_s1](https://github.com/sandy1in/Semi-conductor-Wafer-Defect-Detection/blob/main/gui_s1.jpg)
+![gui_s2](https://github.com/sandy1in/Semi-conductor-Wafer-Defect-Detection/blob/main/gui_s2.jpg)
+
