@@ -1,20 +1,22 @@
-# Semi-conductor-Wafer-Defect-Detection
+#Semiconductor-Wafer-Defect-Detection
+##Overview
+Welcome to the "Wafer Defect Identification" repository! This project focuses on identifying defects in wafer images using deep learning techniques. The dataset comprises images with nine distinct classes of defects. To address challenges such as class imbalance & image quality , we have employed the techniques ,Data Augmentation, One-Hot Encoded Semantic Segmentation (OHESS) preprocessing technique.
 
-Project focused on using Convolutional Neural Networks (CNNs) to improve defect identification in 
-semiconductor wafer surfaces. Traditional methods like manual inspection and feature-based 
-algorithms Often fall short in accuracy and reliability for such tasks.
+##Dataset
 
-We developed a specialized CNN architecture called CNN-WDI (CNN for Wafer Defect Identification) to 
-directly learn and extract meaningful features from raw wafer map images. This approach aimed to 
-achieve higher classificaƟon accuracy compared to convenƟonal methods.
+Link : http://mirlab.org/dataset/public/
+Raw_images
 
-We used the WM-811K dataset consists of 800,000 images but in that only 120,000 are labelled also 
-there was an imbalance in the dataset. To address this imbalance, we applied data augmentaƟon 
-techniques like rotaƟon and flipping, shearing, scaling. Preprocessing involved resizing images to a 
-standard format of (224,224,3) and using One-Hot Encoded SemanƟc SegmentaƟon (OHESS). Data was 
-divided into three groups: 60% for training, 15% for testing, and 25% for validaƟon.
-The results showcased excepƟonal performance: training accuracy reached 99.18%, test accuracy 
-stood at 96.8%, and validaƟon accuracy at 96.6%. 
-In evaluating our model's performance, we created visual plots of accuracy scores, confusion matrices, 
-and precision-recall curves. These insights guided us in refining hyperparameters and validaƟng the 
-model's robustness, ulƟmately enhancing defect idenƟficaƟon in semiconductor wafers.
+Our dataset includes images of wafers with defects classified into nine different classes. To enhance the dataset and mitigate the class imbalance issue, we have implemented data augmentation techniques.
+
+##Preprocessing
+One-Hot Encoded Semantic Segmentation (OHESS) To prepare the data for training, we have utilized the One-Hot Encoded Semantic Segmentation (OHESS) technique. This involves resizing and augmenting the images, enhancing the model's ability to generalize and recognize defects effectively.
+
+
+
+##Handling Class Imbalance
+Class imbalance is a common challenge in multi-class classification problems. In our dataset, we observed a significant imbalance between classes. To address this, we have employed data augmentation strategies to increase the representation of minority classes. This ensures that the model learns effectively from all classes, improving overall performance.
+
+##Requirements
+pip install -r requirements.txt
+Follow the instructions in the notebooks and scripts within each directory to explore and run the project components. Contributing
